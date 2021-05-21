@@ -1,0 +1,15 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/getdata">Get data</a></li>
+      <li><a routerLink="/audit">Audit</a></li>
+      <li><a routerLink="/login" *ngIf="!allser.getlogedin()">Login</a></li>
+      <li><a routerLink="/reg" *ngIf="!allser.getlogedin()">Register</a></li>
+      <li><a routerLink="/logout" *ngIf="allser.getlogedin()" (click)='allser.logout()'>Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

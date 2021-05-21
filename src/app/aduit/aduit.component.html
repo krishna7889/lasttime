@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <table datatable class="row-border hover">
+                <thead class="bg-info">
+                  <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Technology</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr *ngFor="let adata of auditdata">
+                     <td>{{adata.name}}</td>
+                     <td>{{adata.empid}}</td>
+                     <td>{{adata.technology}}</td>
+                     <td>{{adata.date}}</td>
+                 </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+</div>
